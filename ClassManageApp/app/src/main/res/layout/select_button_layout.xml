@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_week_linear_layout"
+    android:layout_width="100sp"
+    android:layout_height="50sp"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/select_week_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="第1周"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/select_week_button_image"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:paddingBottom="10dp"
+        android:src="@mipmap/arrow_drop_up_white" />
+
+</LinearLayout>

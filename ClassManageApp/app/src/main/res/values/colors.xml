@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- 在此定义主题颜色 -->
+    <color name="main_back_color_red">#FADBD8</color>
+    <color name="main_back_color_blue">#AED6F1</color>
+    <color name="setting_back">#F8F9F9</color>
+    <color name="setting_back_header_blue">#3498DB</color>
+    <color name="setting_back_header_red">#F1948A</color>
+    <color name="blue_text_color">#FFFFFF</color>
+    <color name="red_text_color">#000000</color>
+    <color name="blue_back_week_color">#D6EAF8</color>
+    <color name="red_back_week_color">#FDEDEC</color>
+    <color name="text_color_gray">#566573</color>
+
+    <color name="back_week_color1">#48C9B0</color>
+    <color name="back_week_color2">#F7DC6F</color>
+    <color name="back_week_color3">#3498DB</color>
+    <color name="back_week_color4">#F1948A</color>
+</resources>
