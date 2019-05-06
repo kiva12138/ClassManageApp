@@ -53,6 +53,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:layout_width="35sp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:gravity="center"
@@ -60,7 +61,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:layout_width="40sp"
+                android:layout_width="35sp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:gravity="center"
@@ -68,7 +69,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:layout_width="40sp"
+                android:layout_width="35sp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:gravity="center"
@@ -76,7 +77,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:layout_width="40sp"
+                android:layout_width="35sp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:gravity="center"
@@ -98,8 +99,9 @@
 
             <TextView
                 android:id="@+id/class_mon_1_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color1"
                 android:gravity="center"
@@ -107,8 +109,9 @@
 
             <TextView
                 android:id="@+id/class_tue_1_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color4"
                 android:gravity="center"
@@ -116,8 +119,9 @@
 
             <TextView
                 android:id="@+id/class_wed_1_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color2"
                 android:gravity="center"
@@ -125,8 +129,9 @@
 
             <TextView
                 android:id="@+id/class_thu_1_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color3"
                 android:gravity="center"
@@ -134,8 +139,9 @@
 
             <TextView
                 android:id="@+id/class_fri_1_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color1"
                 android:gravity="center"
@@ -143,8 +149,9 @@
 
             <TextView
                 android:id="@+id/class_sat_1_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color2"
                 android:gravity="center"
@@ -152,8 +159,9 @@
 
             <TextView
                 android:id="@+id/class_sun_1_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape"
                 android:gravity="center"
@@ -174,8 +182,9 @@
 
             <TextView
                 android:id="@+id/class_mon_2_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color2"
                 android:gravity="center"
@@ -183,8 +192,9 @@
 
             <TextView
                 android:id="@+id/class_tue_2_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color3"
                 android:gravity="center"
@@ -192,8 +202,9 @@
 
             <TextView
                 android:id="@+id/class_wed_2_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color1"
                 android:gravity="center"
@@ -201,8 +212,9 @@
 
             <TextView
                 android:id="@+id/class_thu_2_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape"
                 android:gravity="center"
@@ -210,8 +222,9 @@
 
             <TextView
                 android:id="@+id/class_fri_2_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color4"
                 android:gravity="center"
@@ -219,8 +232,9 @@
 
             <TextView
                 android:id="@+id/class_sat_2_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color1"
                 android:gravity="center"
@@ -228,8 +242,9 @@
 
             <TextView
                 android:id="@+id/class_sun_2_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color1"
                 android:gravity="center"
@@ -250,8 +265,9 @@
 
             <TextView
                 android:id="@+id/class_mon_3_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color3"
                 android:gravity="center"
@@ -259,8 +275,9 @@
 
             <TextView
                 android:id="@+id/class_tue_3_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color1"
                 android:gravity="center"
@@ -268,8 +285,9 @@
 
             <TextView
                 android:id="@+id/class_wed_3_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color4"
                 android:gravity="center"
@@ -277,8 +295,9 @@
 
             <TextView
                 android:id="@+id/class_thu_3_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color2"
                 android:gravity="center"
@@ -286,8 +305,9 @@
 
             <TextView
                 android:id="@+id/class_fri_3_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color3"
                 android:gravity="center"
@@ -295,8 +315,9 @@
 
             <TextView
                 android:id="@+id/class_sat_3_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color4"
                 android:gravity="center"
@@ -304,8 +325,9 @@
 
             <TextView
                 android:id="@+id/class_sun_3_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color2"
                 android:gravity="center"
@@ -326,8 +348,9 @@
 
             <TextView
                 android:id="@+id/class_mon_4_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color4"
                 android:gravity="center"
@@ -335,8 +358,9 @@
 
             <TextView
                 android:id="@+id/class_tue_4_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape"
                 android:gravity="center"
@@ -344,8 +368,9 @@
 
             <TextView
                 android:id="@+id/class_wed_4_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color3"
                 android:gravity="center"
@@ -353,8 +378,9 @@
 
             <TextView
                 android:id="@+id/class_thu_4_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color1"
                 android:gravity="center"
@@ -362,8 +388,9 @@
 
             <TextView
                 android:id="@+id/class_fri_4_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape"
                 android:gravity="center"
@@ -371,8 +398,9 @@
 
             <TextView
                 android:id="@+id/class_sat_4_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color2"
                 android:gravity="center"
@@ -380,8 +408,9 @@
 
             <TextView
                 android:id="@+id/class_sun_4_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color3"
                 android:gravity="center"
@@ -402,8 +431,9 @@
 
             <TextView
                 android:id="@+id/class_mon_5_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape"
                 android:gravity="center"
@@ -411,8 +441,9 @@
 
             <TextView
                 android:id="@+id/class_tue_5_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color1"
                 android:gravity="center"
@@ -420,8 +451,9 @@
 
             <TextView
                 android:id="@+id/class_wed_5_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color2"
                 android:gravity="center"
@@ -429,8 +461,9 @@
 
             <TextView
                 android:id="@+id/class_thu_5_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color4"
                 android:gravity="center"
@@ -438,8 +471,9 @@
 
             <TextView
                 android:id="@+id/class_fri_5_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color2"
                 android:gravity="center"
@@ -447,8 +481,9 @@
 
             <TextView
                 android:id="@+id/class_sat_5_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape"
                 android:gravity="center"
@@ -456,8 +491,9 @@
 
             <TextView
                 android:id="@+id/class_sun_5_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color4"
                 android:gravity="center"
@@ -479,8 +515,9 @@
 
             <TextView
                 android:id="@+id/class_mon_6_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color1"
                 android:gravity="center"
@@ -488,8 +525,9 @@
 
             <TextView
                 android:id="@+id/class_tue_6_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color2"
                 android:gravity="center"
@@ -497,8 +535,9 @@
 
             <TextView
                 android:id="@+id/class_wed_6_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color4"
                 android:gravity="center"
@@ -506,8 +545,9 @@
 
             <TextView
                 android:id="@+id/class_thu_6_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape"
                 android:gravity="center"
@@ -515,8 +555,9 @@
 
             <TextView
                 android:id="@+id/class_fri_6_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color1"
                 android:gravity="center"
@@ -524,8 +565,9 @@
 
             <TextView
                 android:id="@+id/class_sat_6_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
+                android:layout_gravity="clip_horizontal"
                 android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape_color3"
                 android:gravity="center"
@@ -533,9 +575,10 @@
 
             <TextView
                 android:id="@+id/class_sun_6_text"
-                android:layout_width="wrap_content"
+                android:layout_width="35sp"
                 android:layout_height="100sp"
-                android:layout_margin="5dp"
+                android:layout_gravity="clip_horizontal"
+                android:layout_margin="1dp"
                 android:background="@drawable/round_rect_shape"
                 android:gravity="center"
                 android:text="Math" />

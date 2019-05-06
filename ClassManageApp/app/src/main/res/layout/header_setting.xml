@@ -29,12 +29,12 @@
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/current_time_text"
+        android:id="@+id/current_week_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:padding="20dp"
-        android:text="@string/setting_current_class_title"
+        android:text="@string/setting_current_week_title"
         android:textColor="@color/blue_text_color"
         android:textSize="25sp" />
 

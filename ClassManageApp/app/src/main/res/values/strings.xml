@@ -4,7 +4,7 @@
     <string name="setting_semester_title">更改当前学期</string>
 
     <string name="setting_current_semester_title">当前学期为:</string>
-    <string name="setting_current_class_title">当前节次为:</string>
+    <string name="setting_current_week_title">当前周次为:</string>
 
     <array name="weeks_numbers">
         <item>第1周</item>
@@ -51,6 +51,16 @@
         <item>第10学期</item>
     </array>
 
+    <array name="week_seq">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </array>
+
     <string-array name="classes_id">
         <item>@+id/class_mon_1_text</item>
         <item>@+id/class_mon_2_text</item>
@@ -58,12 +68,12 @@
         <item>@+id/class_mon_4_text</item>
         <item>@+id/class_mon_5_text</item>
         <item>@+id/class_mon_6_text</item>
-        <item>@+id/class_thu_1_text</item>
-        <item>@+id/class_thu_2_text</item>
-        <item>@+id/class_thu_3_text</item>
-        <item>@+id/class_thu_4_text</item>
-        <item>@+id/class_thu_5_text</item>
-        <item>@+id/class_thu_6_text</item>
+        <item>@+id/class_tue_1_text</item>
+        <item>@+id/class_tue_2_text</item>
+        <item>@+id/class_tue_3_text</item>
+        <item>@+id/class_tue_4_text</item>
+        <item>@+id/class_tue_5_text</item>
+        <item>@+id/class_tue_6_text</item>
         <item>@+id/class_wed_1_text</item>
         <item>@+id/class_wed_2_text</item>
         <item>@+id/class_wed_3_text</item>
