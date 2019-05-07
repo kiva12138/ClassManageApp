@@ -11,5 +11,20 @@
             android:title="@string/setting_semester_title"
             android:icon="@mipmap/semesterlogo"
             />
+        <item
+            android:id="@+id/setting_set_service"
+            android:title="@string/setting_service_title"
+            android:icon="@mipmap/round_add_alert_black_48"
+            />
+        <item
+            android:id="@+id/setting_shut_service"
+            android:title="@string/setting_shut_service_title"
+            android:icon="@mipmap/round_error_black_48"
+            />
+        <item
+            android:id="@+id/setting_change_skin_service"
+            android:title="@string/setting_change_skin_title"
+            android:icon="@mipmap/round_sentiment_satisfied_alt_black_48"
+            />
     </group>
 </menu>

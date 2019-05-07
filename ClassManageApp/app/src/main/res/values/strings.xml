@@ -2,6 +2,9 @@
     <string name="app_name">启智课表</string>
     <string name="setting_time_title">设置上课时间</string>
     <string name="setting_semester_title">更改当前学期</string>
+    <string name="setting_service_title">启动后台提醒</string>
+    <string name="setting_shut_service_title">关闭后台提醒</string>
+    <string name="setting_change_skin_title">更换外观皮肤</string>
 
     <string name="setting_current_semester_title">当前学期为:</string>
     <string name="setting_current_week_title">当前周次为:</string>

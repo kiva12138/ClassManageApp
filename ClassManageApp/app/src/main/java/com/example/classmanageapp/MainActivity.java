@@ -1,7 +1,10 @@
 package com.example.classmanageapp;
 
+import android.app.ActivityManager;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -16,7 +19,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,10 +28,18 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import com.example.classmanageapp.Data.ClassInfo;
+import com.example.classmanageapp.DataProvider.ClassInfoDBHelper;
+import com.example.classmanageapp.DataProvider.ClassInfoSharedPreferences;
+import com.example.classmanageapp.RecyclerViewRelated.WeekClass;
+import com.example.classmanageapp.RecyclerViewRelated.WeekSelectAdapter;
+import com.example.classmanageapp.Services.ClassRemindService;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -57,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView class6TimeTextView;
     private TextView currentSemesterHeaderTextView;
     private TextView currentWeekHeaderTextView;
+    private RelativeLayout settingHeaderRelativeLayout;
+    private LinearLayout classMainLinearLayout;
 
     //  监听器定义
     private ClassNavViewListener classNavViewListener;
@@ -76,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
     private String[] endTimes;
     private String classNumbers;
     private int[] textViewIds;
+    private Intent backRemind;
+    private int currentColor; // 1=blue, 2=red
 
     // SharedPreference与SQLite的访写类
     private ClassInfoDBHelper classInfoDBHelper;
@@ -95,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
         // 初始化
         initiate();
+
     }
 
     // 更新界面
@@ -140,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
             classesTextViews[(classInfo.getDay() - 1) * 6 + classInfo.getTime() - 1].setVisibility(View.VISIBLE);
         }
         classNumbers = classInfoSharedPreferences.getClassNumber(this.currentSemester);
+
     }
 
     // 初始化工作
@@ -165,10 +181,12 @@ public class MainActivity extends AppCompatActivity {
         class4TimeTextView = (TextView)findViewById(R.id.class_time_4_text);
         class5TimeTextView = (TextView)findViewById(R.id.class_time_5_text);
         class6TimeTextView = (TextView)findViewById(R.id.class_time_6_text);
+        classMainLinearLayout = (LinearLayout)findViewById(R.id.drawer_main);
         // 不能直接获取，要先获取抽屉的header，然后再寻找它的子布局
         View headerLayout = navigationView.getHeaderView(0);
         currentSemesterHeaderTextView = (TextView)headerLayout.findViewById(R.id.current_semester_text);
         currentWeekHeaderTextView = (TextView)headerLayout.findViewById(R.id.current_week_text);
+        settingHeaderRelativeLayout = (RelativeLayout)headerLayout.findViewById(R.id.setting_back_header);
 
         // 初始化42个课程控件
         classesTextViews = new TextView[42];
@@ -221,6 +239,23 @@ public class MainActivity extends AppCompatActivity {
         String currentMonth = (calendar.get(Calendar.MONTH)+1) + "月";
         this.currentMonthTextView.setText(currentMonth);
 
+        // 后台服务
+        backRemind = new Intent(MainActivity.this, ClassRemindService.class);
+
+        this.currentColor = 1;
+    }
+
+    // 更换皮肤
+    private void changeSkin(){
+        if(this.currentColor == 1){
+            settingHeaderRelativeLayout.setBackgroundColor(getResources().getColor(R.color.setting_back_header_red));
+            classMainLinearLayout.setBackgroundColor(getResources().getColor(R.color.main_back_color_red));
+            this.currentColor = 2;
+        }else {
+            settingHeaderRelativeLayout.setBackgroundColor(getResources().getColor(R.color.setting_back_header_blue));
+            classMainLinearLayout.setBackgroundColor(getResources().getColor(R.color.main_back_color_blue));
+            this.currentColor = 1;
+        }
     }
 
     // 弹出选择 如果已经弹开那么就关闭
@@ -508,6 +543,19 @@ public class MainActivity extends AppCompatActivity {
                 case  R.id.setting_set_time:
                     setClassTime();
                     break;
+                case R.id.setting_set_service:
+                    if(!isServiceRunning(MainActivity.this, "com.example.classmanageapp.Services.ClassRemindService")) {
+                        (MainActivity.this).startService(backRemind);
+                    }
+                    break;
+                case R.id.setting_shut_service:
+                    if(isServiceRunning(MainActivity.this, "com.example.classmanageapp.Services.ClassRemindService")){
+                        stopService(backRemind);
+                    }
+                    break;
+                case R.id.setting_change_skin_service:
+                    changeSkin();
+                    break;
             }
             return true;
         }
@@ -604,4 +652,18 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    // 判断服务是否允许
+    boolean isServiceRunning(Context context, String serviceName) {
+        ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningServiceInfo> runningServiceInfos = am.getRunningServices(200);
+        if (runningServiceInfos.size() <= 0) {
+            return false;
+        }
+        for (ActivityManager.RunningServiceInfo serviceInfo : runningServiceInfos) {
+            if (serviceInfo.service.getClassName().equals(serviceName)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
