@@ -46,6 +46,7 @@ public class ClassInfoSharedPreferences {
         classNumbers = new String[10];
         for(int i=0; i<10; i++){
             this.classNumbers[i] = sharedPreferences.getString("classNumber" + i, "00000000000000000000");
+            Log.i("AAA", String.valueOf(i) + this.classNumbers[i]);
         }
     }
 
@@ -73,7 +74,7 @@ public class ClassInfoSharedPreferences {
         }
         classNumbers[semester - 1] = stringBuilder.toString();
         editor = context.getSharedPreferences("class_info", context.MODE_PRIVATE).edit();
-        editor.putString("classNumber" + semester, classNumbers[semester - 1]);
+        editor.putString("classNumber" + (semester - 1), classNumbers[semester - 1]);
         editor.apply();
     }
 
@@ -84,7 +85,7 @@ public class ClassInfoSharedPreferences {
         }
         classNumbers[semester - 1] = stringBuilder.toString();
         editor = context.getSharedPreferences("class_info", context.MODE_PRIVATE).edit();
-        editor.putString("classNumber" + semester, classNumbers[semester - 1]);
+        editor.putString("classNumber" + (semester - 1), classNumbers[semester - 1]);
         editor.apply();
     }
 
